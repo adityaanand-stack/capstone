@@ -1,5 +1,4 @@
-export default function decorate(block){
-
+export default function decorate(block) {
   const rows = [...block.children];
 
   /* create tab container */
