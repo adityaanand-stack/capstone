@@ -1,0 +1,32 @@
+/* TAB CONTAINER */
+
+.adventure-tabs {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+/* remove extra wrappers */
+
+.adventure-tabs > div {
+  display: contents;
+}
+
+/* tab buttons */
+
+.adventure-tabs p {
+  margin: 0;
+  padding: 10px 18px;
+  font-size: 13px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #222;
+}
+
+/* active tab */
+
+.adventure-tabs p.active {
+  background: #222;
+  color: #fff;
+}
