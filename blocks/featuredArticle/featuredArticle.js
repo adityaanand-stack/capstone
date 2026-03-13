@@ -1,17 +1,24 @@
 export default function decorate(block) {
-  const row = block.querySelector(':scope > div');
+  const cols = [...block.firstElementChild.children];
 
-  if (!row) return;
+  block.classList.add(`featured-${cols.length}-cols`);
 
-  const image = row.children[0];
-  const content = row.children[1];
+  [...block.children].forEach((row) => {
+    const columns = [...row.children];
 
-  if (image) image.classList.add('featured-image');
-  if (content) content.classList.add('featured-content');
+    if (columns[0]) {
+      columns[0].classList.add('featured-image');
+    }
 
-  const button = block.querySelector('a');
+    if (columns[1]) {
+      columns[1].classList.add('featured-content');
+    }
 
-  if (button) {
-    button.classList.add('featured-button');
-  }
+    columns.forEach((col) => {
+      const button = col.querySelector('a');
+      if (button) {
+        button.classList.add('featured-button');
+      }
+    });
+  });
 }
