@@ -71,7 +71,6 @@
 /* ================= Tablet ================= */
 
 @media (width <= 900px) {
-
   .cards {
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
@@ -92,7 +91,6 @@
 /* ================= Mobile ================= */
 
 @media (width <= 600px) {
-
   .cards {
     grid-template-columns: 1fr;
     gap: 20px;

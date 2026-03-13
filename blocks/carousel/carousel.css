@@ -115,7 +115,6 @@
 }
 
 @media (width <= 1200px) {
-
   .carousel-content {
     left: 60px;
     bottom: 70px;
@@ -129,7 +128,6 @@
 }
 
 @media (width <= 900px) {
-
   .carousel-slide picture img {
     height: 420px;
   }

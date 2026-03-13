@@ -52,7 +52,6 @@
 /* ================= Tablet ================= */
 
 @media (width <= 1024px){
-
   .page-align{
     flex-direction: column;
     gap: 40px;
@@ -81,14 +80,13 @@
 /* ================= Mobile ================= */
 
 @media (width <= 600px){
-
   .page-align{
     gap:30px;
   }
 
   .share-adventure-wrapper{
     margin-top:20px !important;
-    margin-left: 0px !important;
+    margin-left: 0 !important;
   }
 
   .story-card{

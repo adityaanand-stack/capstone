@@ -74,14 +74,13 @@
 /* hover */
 
 .featured-button:hover {
-  background: #ffcc00;
+  background: #fc0;
   text-decoration: none;
 }
 
 /* responsive */
 
 @media (width <= 900px) {
-
   .featuredarticle > div {
     grid-template-columns: 1fr;
   }

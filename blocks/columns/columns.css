@@ -3,10 +3,11 @@
 .page-align{
   display:flex;
 }
+
 .columns-container {
   max-width: 1400px;
   margin: auto;
-  padding: 0px 40px;
+  padding: 0 40px;
   gap: 80px;
 
 }
@@ -63,7 +64,6 @@
 /* ================= Tablet ================= */
 
 @media (width <= 1024px) {
-
   .page-align{
     flex-direction: column;
     gap: 40px;
@@ -83,7 +83,6 @@
 /* ================= Mobile ================= */
 
 @media (width <= 600px) {
-
   .columns-container {
     padding: 0 20px;
   }

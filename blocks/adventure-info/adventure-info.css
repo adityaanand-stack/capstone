@@ -68,7 +68,6 @@
 /* ================= Tablet ================= */
 
 @media (width <= 1024px){
-
   .adventure-tabs{
     flex-wrap:wrap;
     gap:15px;
@@ -93,7 +92,6 @@
 /* ================= Mobile ================= */
 
 @media (width <= 600px){
-
   .adventure-tabs{
     flex-wrap:wrap;
     gap:10px;
@@ -107,7 +105,7 @@
   .adventure-info.block{
     max-width:100%;
     padding:0 16px;
-    margin-left: 0px ;
+    margin-left: 0 ;
   }
 
   .adventure-info img{

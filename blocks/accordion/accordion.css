@@ -51,7 +51,6 @@
 /* ================= Tablet ================= */
 
 @media (width <= 1024px) {
-
   .accordion{
     padding: 0 60px;
   }
@@ -71,7 +70,6 @@
 /* ================= Mobile ================= */
 
 @media (width <= 600px) {
-
   .accordion{
     padding: 0 20px;
   }
