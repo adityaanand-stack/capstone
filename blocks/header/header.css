@@ -60,7 +60,7 @@ header nav .nav-brand .default-content-wrapper {
 header nav .nav-brand .default-content-wrapper p {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 14px;
 }
  
 header nav .nav-brand a {
