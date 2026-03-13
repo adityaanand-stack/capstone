@@ -1,0 +1,164 @@
+.carousel-container {
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+/* ---------------- Carousel ---------------- */
+
+.carousel {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  overflow: hidden;
+}
+
+/* ---------------- Track ---------------- */
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.6s ease;
+}
+
+/* ---------------- Slide ---------------- */
+
+.carousel-slide {
+  min-width: 100%;
+  position: relative;
+}
+
+/* ---------------- Image ---------------- */
+
+.carousel-slide picture img {
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ---------------- Content Box ---------------- */
+
+.carousel-content {
+  position: absolute;
+  left: 120px;
+  bottom: 90px;
+  background: #fffdfd;
+  padding: 30px;
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ---------------- Title ---------------- */
+
+.carousel-content h2 {
+  font-size: 40px;
+  margin: 0;
+}
+
+/* ---------------- Description ---------------- */
+
+.carousel-content p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* ---------------- Button ---------------- */
+
+.carousel-content a {
+  background: #ffd400;
+  padding: 14px 28px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  width: fit-content;
+}
+
+/* ---------------- Arrows ---------------- */
+
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  bottom: 40px;
+  right: 80px;
+  border: none;
+  background: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 12px 16px;
+}
+
+.carousel-prev {
+  right: 140px;
+}
+
+/* ---------------- Dots ---------------- */
+
+.carousel-dots {
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 6px;
+}
+
+.dot.active {
+  background: #333;
+}
+
+@media (width <= 1200px) {
+
+  .carousel-content {
+    left: 60px;
+    bottom: 70px;
+    max-width: 520px;
+  }
+
+  .carousel-content h2 {
+    font-size: 34px;
+  }
+
+}
+
+@media (width <= 900px) {
+
+  .carousel-slide picture img {
+    height: 420px;
+  }
+
+  .carousel-content {
+    left: 30px;
+    right: 30px;
+    bottom: 60px;
+    padding: 24px;
+    max-width: 90%;
+  }
+
+  .carousel-content h2 {
+    font-size: 28px;
+  }
+
+  .carousel-content p {
+    font-size: 16px;
+  }
+
+  /* hide arrows on tablet & phone */
+
+  .carousel-prev,
+  .carousel-next {
+    display: none;
+  }
+
+  .carousel-dots {
+    bottom: 16px;
+  }
+
+}

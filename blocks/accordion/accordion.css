@@ -1,0 +1,97 @@
+.accordion > div {
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion{
+  padding: 0 150px;
+}
+
+/* Question row */
+
+.accordion h3 {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 18px 0;
+  position: relative;
+}
+
+/* plus icon */
+
+.accordion h3::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  font-size: 26px;
+  font-weight: 300;
+}
+
+/* when active show minus */
+
+.accordion .active h3::after {
+  content: "−";
+}
+
+/* answer */
+
+.accordion > div > div:last-child {
+  display: none;
+  padding-bottom: 20px;
+  color: #444;
+  line-height: 1.7;
+}
+
+/* open state */
+
+.accordion .active > div:last-child {
+  display: block;
+}
+
+/* ================= Tablet ================= */
+
+@media (width <= 1024px) {
+
+  .accordion{
+    padding: 0 60px;
+  }
+
+  .accordion h3 {
+    font-size: 15px;
+    padding: 16px 0;
+  }
+
+  .accordion h3::after {
+    font-size: 24px;
+  }
+
+}
+
+
+/* ================= Mobile ================= */
+
+@media (width <= 600px) {
+
+  .accordion{
+    padding: 0 20px;
+  }
+
+  .accordion h3 {
+    font-size: 14px;
+    line-height: 1.4;
+    padding: 14px 0;
+    padding-right: 30px; /* space for icon */
+  }
+
+  .accordion h3::after {
+    font-size: 22px;
+    right: 5px;
+  }
+
+  .accordion > div > div:last-child {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+}
+

@@ -1,0 +1,49 @@
+.author-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 50px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* each author */
+
+.author-card > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* author image */
+
+.author-card picture img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+/* name */
+
+.author-card h3 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  font-weight: 200;
+}
+
+/* role */
+
+.author-card h5 {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.author-social{
+    background-color: rgb(58, 55, 55);
+}
+
+.author-social p a{
+    padding: 0 10px;
+}

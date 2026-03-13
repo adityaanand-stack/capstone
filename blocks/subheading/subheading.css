@@ -1,0 +1,16 @@
+.subheading h2 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+/* yellow underline */
+.subheading h2::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 4px;
+  background: #ffd500;
+  margin-top: 10px;
+}

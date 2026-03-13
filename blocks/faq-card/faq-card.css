@@ -1,0 +1,110 @@
+.faq-card{
+  padding: 0 150px;
+}
+
+.faq-card > div {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 100px;
+  align-items: start;
+}
+
+/* left content */
+
+.faq-left {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.faq-left img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* description */
+
+.faq-left p,
+.faq-left div:last-child {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* right contact */
+
+.faq-contact {
+  padding-top: 10px;
+}
+
+.faq-contact h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.faq-contact p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #444;
+}
+
+.faq-contact a {
+  color: #2b5cff;
+  text-decoration: none;
+}
+
+.faq-contact a:hover {
+  text-decoration: underline;
+}
+
+/* ================= Tablet ================= */
+
+@media (width <= 1024px) {
+
+  .faq-card{
+    padding: 0 60px;
+  }
+
+  .faq-card > div {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .faq-left {
+    gap: 20px;
+  }
+
+  .faq-contact {
+    padding-top: 0;
+  }
+
+}
+
+/* ================= Mobile ================= */
+
+@media (width <= 600px) {
+
+  .faq-card{
+    padding: 0 20px;
+  }
+
+  .faq-card > div {
+    gap: 40px;
+  }
+
+  .faq-left p,
+  .faq-left div:last-child {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .faq-contact h3 {
+    font-size: 18px;
+  }
+
+  .faq-contact p {
+    font-size: 14px;
+  }
+
+}
