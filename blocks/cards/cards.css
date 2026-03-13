@@ -27,7 +27,7 @@
   display: block;
 }
 
-/* Article button (must come before more specific selectors) */
+/* Article button */
 
 .articlebtn a {
   display: inline-block;
@@ -113,8 +113,9 @@
     font-size: 13px;
   }
 
-  .articlebtn a {
-    padding: 12px 26px;
+  /* adjust button size without redefining specificity */
+
+  .articlebtn {
     font-size: 14px;
   }
 }
