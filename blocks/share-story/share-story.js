@@ -1,10 +1,7 @@
 export default function decorate(block) {
   const rows = [...block.children];
 
-  rows.forEach((row, index) => {
-
-    
-
+  rows.forEach((row) => {
     const cols = [...row.children];
     if (cols.length < 2) return;
 

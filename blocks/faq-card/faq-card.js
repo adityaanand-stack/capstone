@@ -1,5 +1,4 @@
 export default function decorate(block) {
-
   const wrapper = block.querySelector(':scope > div');
   const items = [...wrapper.children];
 
@@ -10,7 +9,7 @@ export default function decorate(block) {
   contact.className = 'faq-contact';
 
   /* first two elements -> left side */
-  
+
   left.append(items[0], items[1]);
 
   /* third element -> contact side */
@@ -19,5 +18,4 @@ export default function decorate(block) {
 
   wrapper.innerHTML = '';
   wrapper.append(left, contact);
-
 }

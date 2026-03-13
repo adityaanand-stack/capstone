@@ -44,10 +44,21 @@ export default function decorate(block) {
 
   block.append(prev, next);
 
-  /* dots */
-
   const dotsContainer = document.createElement('div');
   dotsContainer.className = 'carousel-dots';
+
+  const dots = [];
+
+  /* update function moved here */
+  function update() {
+    track.style.transform = `translateX(-${current * 100}%)`;
+
+    dots.forEach((dot, i) => {
+      dot.classList.toggle('active', i === current);
+    });
+  }
+
+  /* dots */
 
   slides.forEach((_, i) => {
     const dot = document.createElement('span');
@@ -61,19 +72,10 @@ export default function decorate(block) {
     });
 
     dotsContainer.append(dot);
+    dots.push(dot);
   });
 
   block.append(dotsContainer);
-
-  const dots = dotsContainer.querySelectorAll('.dot');
-
-  function update() {
-    track.style.transform = `translateX(-${current * 100}%)`;
-
-    dots.forEach((dot, i) => {
-      dot.classList.toggle('active', i === current);
-    });
-  }
 
   prev.addEventListener('click', () => {
     current = (current - 1 + slides.length) % slides.length;

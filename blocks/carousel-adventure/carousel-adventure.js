@@ -1,5 +1,4 @@
 export default function decorate(block) {
-
   const slides = [...block.children];
 
   if (slides.length === 0) return;
@@ -42,6 +41,14 @@ export default function decorate(block) {
 
   const dots = [];
 
+  function update() {
+    track.style.transform = `translateX(-${index * 100}%)`;
+
+    dots.forEach((d, i) => {
+      d.classList.toggle('active', i === index);
+    });
+  }
+
   slides.forEach((_, i) => {
     const dot = document.createElement('div');
     dot.className = 'carousel-dot';
@@ -57,14 +64,6 @@ export default function decorate(block) {
   });
 
   block.append(dotsWrap);
-
-  function update() {
-    track.style.transform = `translateX(-${index * 100}%)`;
-
-    dots.forEach((d, i) => {
-      d.classList.toggle('active', i === index);
-    });
-  }
 
   next.addEventListener('click', () => {
     index = (index + 1) % slides.length;
