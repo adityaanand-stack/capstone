@@ -6,10 +6,11 @@ export default function decorate(block) {
   const image = row.children[0];
   const content = row.children[1];
 
-  image.classList.add('featured-image');
-  content.classList.add('featured-content');
+  if (image) image.classList.add('featured-image');
+  if (content) content.classList.add('featured-content');
 
-  const button = content.querySelector('a');
+  const button = block.querySelector('a');
+
   if (button) {
     button.classList.add('featured-button');
   }
