@@ -36,6 +36,13 @@
   justify-content: center;
 }
 
+/* description */
+
+.featured-content p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
 /* small label */
 
 .featured-content p:first-child {
@@ -50,13 +57,6 @@
   font-size: 44px;
   font-weight: 400;
   margin-bottom: 25px;
-}
-
-/* description */
-
-.featured-content p {
-  font-size: 18px;
-  line-height: 1.6;
 }
 
 /* button */
@@ -92,5 +92,4 @@
   .featured-content h2 {
     font-size: 32px;
   }
-
 }
