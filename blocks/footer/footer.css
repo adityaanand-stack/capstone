@@ -106,6 +106,7 @@ footer p {
   font-size:12px;
   line-height:1.6;
   color:#d0d0d0;
+  text-align: justify;
 }
 
 footer .section:last-child .default-content-wrapper p{
